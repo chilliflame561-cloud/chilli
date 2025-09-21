@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<header><h1>Maggi, Macaroni & Pasta</h1></header>
+<div class="menu-grid">
+  <div class="dish"><img src="https://theovenchef.com/wp-content/uploads/2023/12/plain-maggie-1.png" alt="1"><div class="dish-title">Plain Maggi</div><div class="price-row">Half:-₹60/-  Full:-₹80/-</div></div>
+  <div class="dish"><img src="https://vegecravings.com/wp-content/uploads/2020/01/Vegetable-Masala-Maggi-Recipe-Step-By-Step-Instructions-500x500.jpg" alt="2"><div class="dish-title">Masala Maggi</div><div class="price-row">Half:-₹70/-  Full:-₹90/--</div></div>
+  <div class="dish"><img src="https://www.secondrecipe.com/wp-content/uploads/2020/04/vegetable-maggi-noodles.jpg" alt="3"><div class="dish-title">Vegetable Maggi</div><div class="price-row">Half:-₹80/-  Full:-₹100/-</div></div>
+  <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO_v-1HmdovmVK4M71k2bA5ZMNEn2vkNmwmA&s" alt="4"><div class="dish-title">Masala Macaroni</div><div class="price-row">Half:-₹100/-  Full:-₹120/-</div></div>
+  <div class="dish"><img src="https://www.gimmesomeoven.com/wp-content/uploads/2012/08/Roasted-Vegetable-Mac-and-Cheese-Recipe-1.jpg" alt="5"><div class="dish-title">Vegetable Macaroni</div><div class="price-row">Half:-₹120/-  Full:-₹140/-</div></div>
+ <div class="dish"><img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/4/8/2/FNM_050114-Classic-Red-Sauce-Recipe_s4x3.jpg.rend.hgtvcom.1280.1280.suffix/1397491331300.webp" alt="6"><div class="dish-title">Red Sauce Pasta</div><div class="price-row">Half:-₹130/-  Full:-₹150/-</div></div>
+ <div class="dish"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/04/white-sauce-pasta.jpg" alt="7"><div class="dish-title">White Sauce Pasta</div><div class="price-row">Half:-₹140/-  Full:-₹160/-</div></div>
+<div class="dish"><img src="https://tastesbetterfromscratch.com/wp-content/uploads/2023/03/Pink-Sauce-Pasta25-1.jpg" alt="8"><div class="dish-title">Mix Sauce Pasta</div><div class="price-row">Half:-₹150/-  Full:-₹170/-</div></div>
+
+</div>
+
+
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

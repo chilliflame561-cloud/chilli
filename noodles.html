@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noodles • Premium Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #ff9b4f;
+      --yellow-deep: #f6a400;
+      --ink: #1c1c1c;
+      --muted: #696969;
+      --bg: #fffaf0;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 20% -20%, rgba(216, 214, 208, 0.6), transparent 60%),
+        radial-gradient(800px 400px at 120% 10%, rgba(255,213,79,0.35), transparent 40%),
+        var(--bg);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    header {
+      background: linear-gradient(135deg, #fff3bf, var(--yellow));
+      padding: 18px 22px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(246,185,0,0.25);
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin: 0;
+    }
+    .menu-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dish {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .dish:hover {
+      transform: translateY(-4px);
+    }
+    .dish img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .dish-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--yellow-deep);
+    }
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+
+ <!-- Candle Delight Pizza -->
+<h2>Noodles</h2>
+  <div class="menu-grid">
+    <div class="dish"><img src="https://shwetainthekitchen.com/wp-content/uploads/2023/03/vegetable-noodles.jpg" alt=""><div class="dish-title">Veg Noodles</div><div class="price">₹100</div></div>
+    <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9Ovw9XjrAH9bYHgyVimlEYA9WqxnsHRKdg&s" alt=""><div class="dish-title">Chilli Garlic Noodles</div><div class="price">₹120</div></div>
+    <div class="dish"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_960,w_960//InstamartAssets/Receipes/paneer_noodles.webp" alt=""><div class="dish-title">Paneer Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8vdmmq6bOjPO1087e9W5A2jU0IgNKuLZ-5Q&s" alt=""><div class="dish-title">Singapori Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.webp" alt=""><div class="dish-title">Hakka Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/egg-fried-noodles-recipe-500x500.jpg" alt=""><div class="dish-title">Egg Noodles</div><div class="price">₹140</div></div>
+    <div class="dish"><img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/06/Spicy-Chicken-Hakka-Noodles-Recipe.jpg" alt=""><div class="dish-title">Chicken Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://i.ytimg.com/vi/AwUCFr5_yag/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCK0cLuBLpyDo8zkSVUfvfcAUVoBg" alt=""><div class="dish-title">Chilli Garlic Chicken Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://www.slimmingeats.com/blog/wp-content/uploads/2012/11/singapore-noodles-735x735.jpg" alt=""><div class="dish-title">Singapori Chicken Noodles</div><div class="price">₹160</div></div>
+    <div class="dish"><img src="https://tiffinandteaofficial.com/wp-content/uploads/2020/11/IMG_7663-1-scaled-e1605519663454.jpg" alt=""><div class="dish-title">Chicken Hakka Noodles</div><div class="price">₹160</div></div>
+  </div>
+</div>
+
+<footer>© <span id="year"></span> Premium Menu</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
